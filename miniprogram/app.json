@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/vote/vote",
+    "pages/createVote/createVote",
+    "pages/me/me",
+    "pages/logs/logs"
+    
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "公共投票系统",
+    "navigationBarBackgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "iconPath": "./icons/vote.png",
+        "selectedIconPath": "./icons/vote.png",
+        "pagePath": "pages/vote/vote",
+        "text": "投票"
+      },
+      {
+        "iconPath": "./icons/make.png",
+        "selectedIconPath": "./icons/make.png",
+        "pagePath": "pages/createVote/createVote",
+        "text": "创建投票"
+      },
+      {
+        "iconPath": "./icons/me.png",
+        "selectedIconPath": "./icons/me.png",
+        "pagePath": "pages/me/me",
+        "text": "个人中心"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

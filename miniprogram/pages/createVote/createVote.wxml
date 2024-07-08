@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="header">
+    <text>创建投票</text>
+  </view>
+  <input class="title-input" placeholder="请输入投票标题" bindinput="inputTitle" value="{{title}}" />
+  <view class="options">
+    <view wx:for="{{options}}" wx:key="index" class="option">
+      <input placeholder="选项{{index + 1}}" bindinput="inputOption" data-index="{{index}}" value="{{item}}" />
+      <button class="remove-btn" bindtap="removeOption" data-index="{{index}}">删除</button>
+    </view>
+  </view>
+  <button class="add-option-btn" bindtap="addOption">添加选项</button>
+  <button class="create-vote-btn" bindtap="createVote">创建投票</button>
+</view>
